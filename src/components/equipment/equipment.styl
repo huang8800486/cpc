@@ -1,0 +1,107 @@
+@import '../../common/css/mixin.styl';
+
+#eqiup_list {
+    background: #f5f5f5;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: rem(50px);
+    bottom: rem(63px);
+    right: 0;
+    margin: auto;
+    maxWidth();
+
+    .equip_ul_wrap {
+        padding: rem(20px) 0;
+        box-sizing: border-box;
+
+        .product_ul {
+            overflow: hidden;
+            position: relative;
+            margin: 0 rem(10px);
+            padding-bottom: rem(20px);
+
+            .item {
+                float: left;
+                width: 50%;
+                overflow: hidden;
+                text-align: center;
+                position: relative;
+                margin-bottom: rem(20px);
+
+                .product_good {
+                    color: #666;
+                    display: block;
+                    background: #fff;
+                    border-radius: rem(5px);
+                    overflow: hidden;
+
+                    .product_img {
+                        position: relative;
+                        overflow: hidden;
+                        padding-top: 89%;
+                        margin-right: 15px;
+                        margin-left: 15px;
+                        margin-top: 15px;
+
+                        img {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            width: 100%;
+                            max-width: 100%;
+                        }
+                    }
+
+                    .productlist_title {
+                        padding-left: rem(10px);
+                        padding-right: rem(10px);
+                        font-size: rem(14px);
+                        padding-top: rem(5px);
+                        overflow: hidden;
+                        height: rem(24px);
+
+                        p {
+                            ell();
+                        }
+                    }
+
+                    .price_day {
+                        padding-bottom: rem(15px);
+                        color: #F40;
+                        font-size: rem(16px);
+                    }
+                }
+            }
+
+            .item:nth-of-type(2n-1) {
+                .product_good {
+                    margin-right: rem(5px);
+                }
+            }
+
+            .item:nth-of-type(2n) {
+                .product_good {
+                    margin-left: rem(5px);
+                }
+            }
+        }
+
+        .bottom_tip {
+            text-align: center;
+            margin-top: rem(-10px);
+        }
+    }
+}
+.isFixed {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    right: 0;
+    margin: auto;
+    display: table;
+    maxWidth();
+}
+

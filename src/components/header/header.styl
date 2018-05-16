@@ -1,0 +1,77 @@
+@import '../../common/css/mixin.styl';
+
+.page_cover {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    maxWidth();
+    z-index: 100;
+}
+.page_cover.animated{animation-duration: 0.1s;}
+
+#header {
+    width: 100%;
+    height: rem(50px);
+    background: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+    color: #fff;
+    display: table;
+    maxWidth();
+    z-index: 99;
+
+    .head_top {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .pull_left {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: rem(50px);
+        height: 100%;
+        z-index:1;
+
+        .menu_btn {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            padding: rem(5px) rem(10px) 0 rem(10px);
+            border-box();
+
+            .iconfont {
+                font-size: rem(30px);
+                color: #fff;
+            }
+        }
+    }
+
+    .pull_text {
+        width:100%;
+        text-align:center;
+        height: rem(50px);
+        line-height: rem(50px);
+        .title_text {
+            font-size: rem(16px);
+        }
+    }
+
+    .pull_right {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: rem(50px);
+        height: 100%;
+    }
+}
