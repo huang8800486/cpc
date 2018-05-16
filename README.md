@@ -18,8 +18,8 @@ npm run build
 npm run build --report
 
 # 测试页面
-![Image text](https://raw.githubusercontent.com/huang8800486/cpc/master/cpc.png)
-
 ```
+
+![Image text](https://raw.githubusercontent.com/huang8800486/cpc/master/cpc.png)
 
 
