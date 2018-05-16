@@ -3,14 +3,19 @@
         <div class="inner_content">
             <div class="importance_index interspace">
                 <div class="studio_active">
+                    <div class="banner_item">
+                        <div class="padding_item">
+                            <cube-slide ref="slide" :data="bannerItems" :autoPlay="true" :showDots="false" @change="changePage">
+                                <cube-slide-item v-for="(item, index) in bannerItems" :key="index">
+                                  <a :href="item.url" class="slide_item">
+                                    <img :src="item.image">
+                                  </a>
+                                </cube-slide-item>
+                            </cube-slide>
+                            <span class="pagation">{{bannerindex}} / {{bannerItems.length}}</span>
+                        </div>
+                    </div>
                     <ul class="clearfix">
-                        <li class="list_itme">
-                            <a href="javascript:;" class="img_box">
-                                <div class="padding_img">
-                                    <img class="lazy" v-lazy="'static/images/index/Index-1.jpg'" alt="">
-                                </div>
-                            </a>
-                        </li>
                         <li class="list_itme">
                             <a href="javascript:;" class="img_box">
                                 <div class="padding_img">
@@ -160,6 +165,35 @@
         </div>
   </div>
 </template>
+<script>
+    export default{
+        name:"v-index",
+        data(){
+            return{
+                bannerItems: [
+                    {
+                        url: 'javascript:;',
+                        image: 'static/images/index/Index-1.jpg'
+                    },
+                    {
+                        url: 'javascript:;',
+                        image: 'static/images/index/Index-2.jpg'
+                    },
+                    {
+                        url: 'javascript:;',
+                        image: 'static/images/index/Index-3.jpg'
+                    }
+                ],
+                bannerindex: 1
+            }
+        },
+        methods:{
+            changePage(current) {
+                this.bannerindex = current + 1;
+            },
+        }
+    }
+</script>   
 <style lang="stylus">
 @import "/index.styl"
 </style>

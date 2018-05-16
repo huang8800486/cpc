@@ -13,9 +13,11 @@ import './common/font/font.styl'
 import './common/js/rem.js'
 import AlloyFinger from 'alloyfinger'
 import AlloyFingerPlugin from 'alloyfinger/vue/alloy_finger.vue'
-import {Scroll} from 'cube-ui'
+import {Slide, Scroll} from 'cube-ui'
 
+Vue.use(Slide)
 Vue.use(Scroll)
+
 Vue.use(AlloyFingerPlugin, {
     AlloyFinger
 })
@@ -24,7 +26,7 @@ Vue.config.productionTip = false
 // error，loading是图片路径, 用require引入
 Vue.use(VueLazyload, {
     preLoad: 1.3,
-    error: require('./assets/404.png'),
+    // error: require('./assets/404.png'),
     // loading: require('./assets/loading.gif'),
     attempt: 1,
     adapter: {

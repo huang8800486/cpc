@@ -20,7 +20,7 @@
                     </div>
                 </div>
             </div>
-            <transition name="fade" enter-active-class="animated fadeInRight" leave-active-class="animated fadeInRight">
+            <transition name="fade" enter-active-class="animated fadeInRight" leave-active-class="animated fadeOutLeft">
                 <v-detail ref="details" v-if="activityList"></v-detail>
             </transition>
       </div>

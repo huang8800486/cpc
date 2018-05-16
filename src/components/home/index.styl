@@ -14,6 +14,43 @@
     .studio_active {
         padding: 0 rem(10px);
 
+        .banner_item {
+            width: 100%;
+            overflow: hidden;
+            padding-top: 50%;
+            position: relative;
+            margin-bottom: rem(10px);
+
+            .padding_item {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+
+                .slide_item {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .pagation {
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    box-sizing: border-box;
+                    background: rgba(0, 0, 0, 0.7);
+                    color: #fff;
+                    padding: rem(5px);
+                    text-align:right;
+                    padding-right:rem(10px);
+                }
+            }
+        }
+
         .list_itme {
             margin-bottom: rem(10px);
 
@@ -107,6 +144,7 @@
         .new_active_img {
             padding: 0 rem(10px);
             margin-bottom: rem(20px);
+
             .active_padding {
                 width: 100%;
                 position: relative;
@@ -138,13 +176,14 @@
                     bottom: 0;
                     background: rgba(0, 0, 0, 0.4);
                     color: #fff;
-                    padding:rem(10px) 0;
-                    line-height:rem(24px);
+                    padding: rem(10px) 0;
+                    line-height: rem(24px);
+
                     .txt {
                         padding: 0 rem(10px);
-                        height:rem(67px);
-                        overflow:hidden;
-                        ellMore(3)
+                        height: rem(67px);
+                        overflow: hidden;
+                        ellMore(3);
                     }
                 }
             }
@@ -158,8 +197,9 @@
                 text-align: center;
                 display: block;
                 color: #000;
-                p{
-                    width:100%;
+
+                p {
+                    width: 100%;
                     ell();
                 }
             }

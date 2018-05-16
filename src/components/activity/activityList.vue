@@ -59,13 +59,9 @@ export default {
     mounted(){
         this.$nextTick(() => {
             document.body.scrollTop = 0;
-            this.$store.commit("UPDATE_FETCHLOADING", true);
              this.get().then((res) => {
                 this.currentActivity = res.data[this.activityNumber];
-                setTimeout(function(){
-                    this.$store.commit("UPDATE_FETCHLOADING", false);
-                    this.showDetail = true;
-                }.bind(this), 1000)
+                this.showDetail = true;
             });
         })
     },
