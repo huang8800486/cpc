@@ -48,7 +48,7 @@ export default {
             //     console.log(from);
             //     console.log(to);
             //     console.log("前一页面: " + from.path + " ,进入的页面是: " + to.path);
-            // console.groupEnd("路由页面")
+            // console.groupEnd("路由页面") 
             var toTarget = to.path.split("/")[1].toLowerCase().toString();
             this.$store.commit("UPDATE_TITLE", pageTitle.NAME_PAGE[toTarget]);
             this.$store.commit("UPDATE_FIXEDCLASS", pageTitle.NAME_PAGE[toTarget]);
