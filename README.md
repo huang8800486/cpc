@@ -11,6 +11,7 @@ cube-ui
 stylus
 webpack
 ```
+![Image text](http://taoalan.com/cpc/static/images/cpc.gif)
 
 ## 目录结构
 ``` bash
