@@ -12,7 +12,7 @@ stylus
 webpack
 ```
 
-![Image text](http://taoalan.com/cpc/static/images/cpc.gif)
+![Image text](https://github.com/huang8800486/cpc/blob/master/cpc.gif)
 
 ## 目录结构
 ``` bash
