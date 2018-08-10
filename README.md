@@ -45,6 +45,5 @@ npm run build
 # demo
 ```
 
-![Image text](https://raw.githubusercontent.com/huang8800486/cpc/master/cpc.png)
 
 
